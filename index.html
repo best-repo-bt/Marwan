@@ -3,61 +3,80 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title></title>الا بغيتي تشوف 🍑ديال حموش دخل هنا</title>
+  <title>لي بغا لقحبة ديال عمر هاهي</title>
   <style>
-    body {
-      font-family: "Tajawal", "Segoe UI", Arial, sans-serif;
-      background: #f1f5f9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#10b981;
+      --text:#e6eef8;
     }
-    .card {
-      background: #fff;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-      text-align: center;
-      width: min(90%, 400px);
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, #071021 0%, #0b1220 100%);
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      color:var(--text);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
     }
-    h1 {
-      color: #0f172a;
-      margin-bottom: 10px;
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:14px;
+      padding:28px;
+      width:100%;
+      max-width:520px;
+      box-shadow:0 10px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+      text-align:right;
     }
-    p {
-      color: #475569;
-      margin-bottom: 20px;
+    h1{
+      margin:0 0 12px 0;
+      font-size:20px;
+      line-height:1.1;
+      letter-spacing:0.4px;
     }
-    a.whatsapp-btn {
-      background-color: #25d366;
-      color: white;
-      text-decoration: none;
-      padding: 12px 18px;
-      border-radius: 12px;
-      font-weight: 600;
-      display: inline-block;
-      transition: 0.2s;
+    p{
+      margin:0 0 20px 0;
+      color:rgba(230,238,248,0.8);
     }
-    a.whatsapp-btn:hover {
-      background-color: #1ebe5d;
-      transform: scale(1.03);
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      padding:12px 18px;
+      border-radius:10px;
+      background:linear-gradient(90deg, var(--accent), #06a77d);
+      color:#042027;
+      font-weight:700;
+      box-shadow:0 6px 18px rgba(16,185,129,0.18);
+      transition:transform .12s ease, box-shadow .12s ease;
+    }
+    .btn:active{transform:translateY(1px)}
+    .small{
+      margin-top:14px;
+      font-size:13px;
+      color:rgba(230,238,248,0.65);
+    }
+    @media (max-width:420px){
+      .card{padding:18px}
+      h1{font-size:18px}
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>الا بغيتي تشوف 🍑ديال حموش دخل هنا</h1>
-    <p>اضغط الزر أسفله للتحدث مع حموش عبر واتساب 👇</p>
-    <a
-      class="whatsapp-btn"
-      href="https://wa.me/+212719-065373?text=%D8%B3%D9%84%D8%A7%D9%85%20%D9%85%D8%B1%D9%88%D8%A7%D9%86"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      راسل حموش على واتساب
+  <main class="card" role="main">
+    <h1>لي بغا لقحبة ديال عمر هاهي</h1>
+    <p>إضغط الزر أسفله باش تفتح حساب الإنستغرام المشار إليه.</p>
+
+    <!-- زر يفتح رابط الإنستغرام في تاب جديد -->
+    <a class="btn" href="https://www.instagram.com/_sanaaae_?igsh=MTl4dnQyZDJxdzF4aw==" target="_blank" rel="noopener noreferrer">
+      افتح حساب الإنستغرام
     </a>
-  </div>
+
+    <div class="small">ملاحظة: الرابط يفتح في نافذة/تبويب جديد.</div>
+  </main>
 </body>
 </html>
